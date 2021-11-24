@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalit: </title>
+    <style>
+        body{
+            background-color: black;
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Qual a sua Nacionalidad: </h1>
+    Qual a sua Nacionalid:<input type="text" name="br" id="bra">
+    <input type="button" value="Pesquisar" onclick="ver()">
+    <div id="resul">
+    </div>
+    <script>
+        function ver(){
+            var brasil = document.getElementById('bra')
+            var res = document.getElementById('resul')
+            var naci = String(brasil.value).toLowerCase()
+            res.innerText = `Seu pais é ${res}<br>`
+            if (naci == "brasil") {
+                res.innerHTML = 'Voce é brasileiro'
+            } else {
+                res.innerHTML = `Voce é ${naci}`
+            }
+        }
+    </script>
+</body>
+</html>
