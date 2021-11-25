@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Aula Zero</title>
+    <style>
+      body {
+        background-color: rgb(78, 31, 248);
+        color: white;
+        font-size: 15pt;
+      }
+      h1{
+        color: goldenrod;
+      }
+      p{
+        color: rgb(105, 255, 118);
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <script>
+    console.log('oi')
+    window.document.write("<strong>Coloquei na tela</strong><br>")
+    window.document.write(window.navigator.appName + "<br>")
+    window.document.write(window.document.URL + "<br>")
+    window.document.write(window.document.characterSet + "<br>")
+  </script>
+  <body>
+    <h1>Javascript</h1>
+    <p>LISTAS DE FRAMEWORKS</p>
+    <h2>Node</h2>
+    <h3>React</h3>
+    <h4>React-NAtive</h4>
+    <h5>TypeScript</h5>
+    <h6>Angular</h6>
+    <hr>
+    <div id="msg">
+        Clike ni mim !!!
+    </div>
+  </body>
+  <script>
+    var d = window.document.getElementById(`msg`)
+    d.style.backgroundColor =  'green'
+    var p1 = window.document.getElementsByTagName(`p`)[0]
+    window.document.write(`Esta escrito => `+p1.innerText)
+     let nome = window.prompt('Qual é o teu nome')
+     window.alert('Seja bem vindo '+ nome)
+     window.document.write("<br>seja bem vindo  " + nome.toLocaleUpperCase())
+     var num1 = Number.parseInt(window.prompt('digite um numero:  '))
+     var num2 = Number.parseInt(window.prompt('Digite um outro numero:  '))
+     var somar  = num1 + num2
+     window.document.write("<br><br><strong>A soma dos valores foi</strong>  " + somar)
+  </script>
+</html>
