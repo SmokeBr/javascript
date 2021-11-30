@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+    font: normal 20pt Arial;
+}
+header {
+    color: gold;
+    text-align: center;
+}
+section {
+    background: rgb(228, 38, 38);
+    border-radius: 50px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+}
+div {
+    text-align: center;
+    padding: 8px;
+}
+footer {
+    color:red;
+    text-align: center;
+    font-style: italic;
+}
+
+strong {
+    color: gold;
+}
